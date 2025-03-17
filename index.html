@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Celine's Creative Coding Portfolio</title>
+
+  <!-- CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.min.js"></script>
+
+  <!-- references an external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <!-- 新增的导航栏 -->
+ <nav style="background: rgba(0,0,0,0.6); padding: 0.5rem; text-align: center;">
+  <!-- 这些链接指向新的页面 -->
+  <a href="index.html" style="margin: 0 1rem; color: #ff1493; text-decoration: none;">Home</a>
+  <a href="aboutCeline.html" style="margin: 0 1rem; color: #ff1493; text-decoration: none;">About Celine</a>
+  <a href="musicCorner.html" style="margin: 0 1rem; color: #ff1493; text-decoration: none;">Music Corner</a>
+  <a href="sketches.html" style="margin: 0 1rem; color: #ff1493; text-decoration: none;">Sketches</a>
+</nav>
+  
+  <div class="scrolling-text">
+    <span>Welcome to my portfolio ~ Please allow camera access for some sketches!</span>
+  </div>
+
+  <div class="crazy-title">Celine’s Code Universe !!!</div>
+
+  <!-- personal intro -->
+  <div class="intro-block">
+    <h2 class="about-heading">About Celine</h2>
+    <p class="crazy-paragraph">
+      In this pink-and-black realm, inspiration knows no bounds 
+      and your imagination runs wild! Ready to face the insane 
+      surge of color and music?!
+    </p>
+
+    <!-- my photo -->
+    <div class="photo-carousel">
+      <img src="./img/1.JPG" alt="Photo1">
+      <img src="./img/2.JPG" alt="Photo2">
+      <img src="./img/3.jpg" alt="Photo3">
+      <img src="./img/4.jpg" alt="Photo4">
+      <img src="./img/5.jpg" alt="Photo5">
+    </div>
+
+    <p class="crazy-paragraph">
+      I’m an NYU IDM student—this is my Creative Coding course portfolio,
+      where colors collide with code and imagination knows no limits! Jump 
+      right in and explore the madness with me!
+    </p>
+  </div>
+
+  <!-- music -->
+  <div class="music-block">
+    <h2>Music Corner</h2>
+    <p class="crazy-paragraph">
+       let the unstoppable beat supercharge your creativity!  
+    </p>
+    <div class="music-player">
+        <div class="music-player">
+            <iframe style="border-radius:12px" 
+            src="https://open.spotify.com/embed/track/5yTYLJY7Atcew0MHm7bmjk?utm_source=generator" 
+            width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>
+    </div>
+  </div>
+
+  <!--All sketch -->
+  <div class="grid-container">
+    <!-- Sketch 1 -->
+    <div class="block">
+      <h2>Sketch 1: Rainbow Candy + Bouncy Lollipop</h2>
+      <div class="sketch-container" id="sketch1-container"></div>
+    </div>
+
+    <!-- Sketch 2 -->
+    <div class="block">
+      <h2>Sketch 2: Neon Pixel Goblins 
+        <br>(Please ALLOW CAMERA for this to work!)
+      </h2>
+      <div class="sketch-container" id="sketch2-container"></div>
+    </div>
+
+    <!-- Sketch 3 -->
+    <div class="block">
+      <h2>Sketch 3: Disco Kitties
+         <br>(Clike to change kittie's color)
+      </h2>
+      <div class="sketch-container" id="sketch3-container"></div>
+    </div>
+
+    <!-- Sketch 4 -->
+    <div class="block">
+      <h2>Sketch 4: Mirrored Video Tiling 
+        <br>(ALLOW CAMERA here too!)
+      </h2>
+      <div class="sketch-container" id="sketch4-container"></div>
+    </div>
+
+    <!--Sketch 5 -->
+    <div class="block">
+      <h2>Sketch 5: Smiley Flowers
+      <br>(drag to see more!)
+    </h2>
+      <div class="sketch-container" id="sketch5-container"></div>
+    </div>
+   
+   
+  <!-- define JS -->
+  <script src="sketch.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* background color */
+  body {
+    font-family: sans-serif;
+    background: linear-gradient(270deg, #000000, #ff1493, #2e0854, #ff69b4);
+    background-size: 800% 800%;
+    animation: hueShift 6s ease-in-out infinite;
+    color: #fff;
+  }
+
+  /* color gradient */
+  @keyframes hueShift {
+    0% { background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+  }
+  
+  /* scrolling text */
+  .scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    background: rgba(0,0,0,0.7);
+    color: #ff82ab;
+    padding: 8px;
+    font-size: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  .scrolling-text span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 10s linear infinite;
+  }
+
+  /* scrolling */
+  @keyframes scroll-left {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  /* title */
+  .crazy-title {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #ff1493;
+    font-weight: bold;
+    text-shadow: 
+      2px 2px 0 #000000,
+      -2px -2px 0 #ff69b4;
+    transform: rotate(-1deg) scale(1.05);
+    animation: wiggle 2s infinite alternate ease-in-out;
+  }
+  @keyframes wiggle {
+    0% { transform: rotate(-1deg) scale(1.05); }
+    100% { transform: rotate(2deg) scale(1.1); }
+  }
+  
+  /* person into */
+  .intro-block {
+    margin: 1.5rem auto;
+    max-width: 800px;
+    background: rgba(0,0,0,0.7);
+    border: 3px dashed #ff1493;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(255,105,180,0.7);
+  }
+  .about-heading {
+    font-family: fantasy, cursive;
+    font-size: 2rem;
+    text-align: center;
+    color: #ff1493;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 1rem;
+  }
+  .crazy-paragraph {
+    font-size: 1.1rem;
+    color: #ffd9e8;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  /* photo scrolling */
+  .photo-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .photo-carousel img {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px groove #ff1493;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  .photo-carousel img:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+  
+  /* music */
+  .music-block {
+    margin: 1rem auto;
+    max-width: 600px;
+    background: rgba(0,0,0,0.8);
+    border: 3px solid #ff1493;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255,105,180,0.6);
+  }
+  
+  /* ggrid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  /* bblock */
+  .block {
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 3px dashed #ff69b4;
+    box-shadow: 0 0 10px rgba(255,105,180,0.5);
+    color: #fff;
+  }
+  .block h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: "Comic Sans MS", fantasy;
+    color: #ff80c0;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  /* button */
+  .control-buttons {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 0.3rem;
+  }
+  .control-buttons button {
+    cursor: pointer;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid #ff1493;
+    border-radius: 4px;
+    padding: 0 0.5rem;
+    font-size: 0.8rem;
+    color: #ffb6c1;
+    font-weight: bold;
+  }
+  .control-buttons button:hover {
+    background: #ff1493;
+    color: #fff;
+  }
+  
+  /* canvas size */
+  .sketch-container {
+    width: 400px;
+    height: 300px;
+    background: #1a1a1a;
+    position: relative;
+    border: 2px solid #ff69b4;
+    border-radius: 6px;
+    margin: 0 auto;
+  }
+  
+  /* code part show */
+  .code {
+    display: none;
+    background: #222;
+    color: #0f0;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    overflow: auto;
+    font-size: 0.8rem;
+    max-height: 300px;
+    border: 2px solid #ff0000;
+    border-radius: 6px;
+  }
+  
