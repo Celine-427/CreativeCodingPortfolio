@@ -7,7 +7,7 @@ let s1 = function(p) {
     let clr;
   
     p.setup = function() {
-      let cnv = p.createCanvas(800, 800);
+      let cnv = p.createCanvas(windowWidth, windowHeight);
       cnv.parent("sketch1-container");
       p.noStroke();
   
@@ -49,7 +49,7 @@ let s1 = function(p) {
     let video;
     let n = 10;
     p.setup = function() {
-      let cnv = p.createCanvas(800,800);
+      let cnv = p.createCanvas(windowWidth,windowHeight);
       cnv.parent("sketch2-container");
       p.colorMode(p.HSB, 255);
       p.noStroke();
@@ -85,7 +85,7 @@ let s1 = function(p) {
     let diffColor = false;
   
     p.setup = function() {
-      let cnv = p.createCanvas(800,800);
+      let cnv = p.createCanvas(windowWidth,windowHeight);
       cnv.parent("sketch3-container");
     };
   
@@ -143,7 +143,7 @@ let s1 = function(p) {
     let hueVal = 0;
   
     p.setup = function() {
-      let cnv = p.createCanvas(800,800);
+      let cnv = p.createCanvas(windowWidth,windowHeight);
       cnv.parent("sketch4-container");
       video = p.createCapture(p.VIDEO);
       video.size(640, 480);
@@ -225,7 +225,7 @@ let s1 = function(p) {
     let flowers = [];
   
     p.setup = function() {
-      let cnv = p.createCanvas(800,800);
+      let cnv = p.createCanvas(windowWidth,windowHeight);
       cnv.parent("sketch5-container");
       for (let i = 0; i < 5; i++) {
         flowers.push(new Flower());
